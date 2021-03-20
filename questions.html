@@ -1,0 +1,58 @@
+<!--This will be the question submittal page-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="week2AssignmentStyles.css">
+</head>
+<body>
+    <div class="row">
+        <h1>Questions</h1>
+
+        <div id="menu">
+            <a href="index.html">Home</a><br>
+            <a href="about.html">About</a><br>
+            <a href="likes.html">Likes & Dislikes</a><br>
+            <a href="questions.html">Questions</a> 
+        </div>
+        
+        <div class="main">
+            <iframe class="video" width="420" height="315"src="https://www.youtube.com/embed/L3FqJKA-Aj0"> alt="Video of a hedgehog eating a mealworm"></iframe>
+    
+            <h2>Once I finish eating, <br> I'd love to take some questions.</h2>
+        
+            <form action="my-question-form" method="post">
+                <p class="questions">Questions for Mindy?</p> 
+                <ul>
+                    <li>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" placeholder="First Name">
+                    </li>
+                    <li>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" placeholder="Last Name">
+                    </li>
+                    <li>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" placeholder="E-mail">
+                    </li>
+                    <li>
+                        <label for="question">Question:</label>
+                        <textarea id="question" name="question" placeholder="Please enter question here"></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Send your question</button> 
+                    </li>
+                </ul>
+            </form>    
+        </div>
+    </div>
+</body>
+
+<footer class="footer">
+    created by meraki11 || 03/2021
+    </footer>
+</html>

@@ -1,0 +1,252 @@
+/*style sheet for my elementary hedgehog page*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+/* menu */
+#menu {
+    margin: auto;
+    flex: 25%;
+}
+  
+/* main */
+.main {
+    margin: auto;
+    flex: 75%;
+}
+  
+/* Still working on responsive layout to make the two columns stack on top of each other instead of next to each other &display correctly in mobile */
+@media screen and (max-width: 600px) {
+    #menu, .main {
+      flex-direction: column;
+    }
+}
+
+body {
+    background-color:#94B3C8;
+}
+
+h1 {
+    color:#37241E;
+    font-style: normal;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: fixed;
+    left: 15px;
+    top: 0px;
+    border-bottom: solid darkgreen;
+}
+
+h2 {
+    color:#4D4E24;
+    font-style: normal;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    left: 12.5%;
+    top: 100px;
+}
+
+h3 {
+    color:#BD8025;
+    font-style: italic;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: darkslategray;
+    position: relative;
+    left: 12.5%;
+    top: 100px;
+}
+
+#menu {
+    background-color: tan;
+    border-style: solid;
+    border-width: 3px;
+    border-color:darkgreen;
+    border-radius: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#37241E;
+    width: 130px;
+    height: 80px;
+    padding: 10px;
+    position: fixed;
+    left: 15px;
+    top: 100px;
+}
+
+a {
+    background-color: tan;
+    transition: background-color .5s;
+}
+
+a:hover {
+    background-color: #816A4A;
+}
+
+p {
+    color:#37241E;
+    font-style: normal;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    position: relative;
+    left: 12.5%;
+    top: 100px;
+}
+
+ul {
+    list-style: outside;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    color:#37241E;
+}
+
+.about {
+    position: relative;
+    left: 12.5%;
+    top: 100px;
+    word-break: keep-all;
+    width: 700px;
+    height: 150px;
+    box-sizing: border-box;
+}
+
+ol {
+    list-style: square;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+    color:#37241E;
+    position: relative;
+    left: 12.5%;
+    top: 100px;
+}
+
+span {
+    float: inline-end;
+    /*position: relative;
+    left: 40%;
+    top: -145px;*/
+}
+
+form {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 400px;
+    border: 1px solid darkgreen;
+    border-radius: 1em;
+    position: relative;
+    left: 12.5%;
+    top: 100px;
+}
+
+form > ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+form label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+} 
+
+form input, textarea {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 275px;
+    box-sizing: border-box;
+    border: 1px solid darkgreen;
+}
+
+form input:focus, textarea:focus {
+    border-color: #37241E;
+}
+
+form textarea {
+    vertical-align: top;
+    height: 5em;
+}
+
+.questions {
+    color:#4D4E24;
+    font-style: italic;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    left: 10px;
+    top: 2px;
+}
+
+.button {
+    padding-left: 90px;
+    margin-left: 75px;
+}
+
+.introPhoto, .aboutPhoto {
+    border: 5px solid darkgreen;
+    border-radius: 10px;
+    position: relative;
+    left: 12.5%;
+    top: 90px;
+    padding: 10px;
+}
+
+.video {
+    border: 5px solid darkgreen;
+    border-radius: 10px;
+    position: relative;
+    left: 12.5%;
+    top: 90px;
+    padding: 10px;
+}
+
+.like1 {
+    border: 5px solid darkgreen;
+    border-radius: 10px;
+    position: relative;
+    left: 12.5%;
+    top: 90px;
+    padding: 10px;
+}
+
+.like2 {
+    border: 5px solid darkgreen;
+    border-radius: 10px;
+    position: relative;
+    left: 12.5%;
+    top: 90px;
+    padding: 10px; 
+}
+
+.facts {
+    border: 5px solid darkgreen;
+    background-color: tan;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    left: 18%;
+    top: 100px;
+}
+
+th {
+    padding: 8px;
+    border-top: 2px solid darkgreen;
+    border-bottom: 2px solid darkgreen;
+    border-right: 2px solid darkgreen;
+    border-left: 2px solid darkgreen;
+}
+
+td {
+    padding: 8px;
+    border-top: 1px dashed darkgreen;
+    border-bottom: 1px dashed darkgreen;
+    border-right: 2px solid darkgreen;
+    border-left: 2px solid darkgreen;
+}
+
+.footer {
+    background-color: tan;
+    color:#37241E;
+    font-style: normal;
+    font-size: small;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    scroll-margin-top: 50px;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
